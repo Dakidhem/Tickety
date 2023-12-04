@@ -3,7 +3,7 @@ import { jwtDecode } from "jwt-decode";
 
 const login = async (username, password) => {
   const response = await axios.post(
-    "https://tickety-api-dakidhem.vercel.app/api/auth/token/",
+    "https://tickety-api.vercel.app/api/auth/token/",
     {
       username,
       password,

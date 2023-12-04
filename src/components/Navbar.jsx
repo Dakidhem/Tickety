@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { getToken } from "../utilities/auth";
 import { toast } from "react-toastify";
+import NotificationsModal from "../pages/Dashboard/modals/NotificationsModal";
 const Navbar = () => {
   const navigateTo = useNavigate();
   const [toggle, setToggle] = useState(false);
@@ -33,6 +34,7 @@ const Navbar = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           {token ? (
             <div className="hidden items-center gap-2 md:flex">
+              <NotificationsModal />
               <Link
                 to="/dashboard"
                 type="button"
