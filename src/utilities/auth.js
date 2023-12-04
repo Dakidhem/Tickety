@@ -2,10 +2,13 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 const login = async (username, password) => {
-  const response = await axios.post("http://127.0.0.1:8000/api/auth/token/", {
-    username,
-    password,
-  });
+  const response = await axios.post(
+    "https://tickety-api-dakidhem.vercel.app/api/auth/token/",
+    {
+      username,
+      password,
+    }
+  );
   return response.data;
 };
 
