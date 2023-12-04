@@ -92,15 +92,15 @@ const Navbar = () => {
           >
             <div className="flex flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  bg-gray-800 md:bg-gray-900 border-gray-700">
               <NotificationsModal />
-              <a
+              <Link
                 to="/dashboard"
-                className="block py-2 px-3 md:p-0  rounded md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700 text-center"
+                className="block py-2 px-3 md:p-0 bg-gray-700  rounded md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700 text-center"
               >
                 Dashboard
-              </a>
+              </Link>
               <button
                 onClick={handleLogout}
-                className="block py-2 px-3 md:p-0  rounde md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
+                className="block py-2 px-3 md:p-0  md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
               >
                 Se déconnecter
               </button>
