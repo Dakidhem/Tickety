@@ -1,7 +1,7 @@
 import { getToken } from "./auth";
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000/api"; // Replace with your API base URL
+const BASE_URL = "https://tickety-api-dakidhem.vercel.app/api"; // Replace with your API base URL
 
 // Create an Axios instance with a base URL and default headers
 const axiosInstance = axios.create({
