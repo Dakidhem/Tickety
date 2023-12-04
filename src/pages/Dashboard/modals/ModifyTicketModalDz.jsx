@@ -64,12 +64,12 @@ export default function ModifyTicketModalDz({ ticket, updateTickets }) {
   return (
     <>
       <button
-        className="block max-w-sm px-6 py-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        className="block max-w-sm px-6 py-4 border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-gray-700"
         type="button"
         onClick={() => setShowModal(true)}
       >
         <div className="flex justify-between items-center ">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
             {ticket?.title}
           </h5>
           {ticket?.assigned_to === null ? (
@@ -86,9 +86,7 @@ export default function ModifyTicketModalDz({ ticket, updateTickets }) {
             </span>
           )}
         </div>
-        <p className="font-normal text-gray-700 dark:text-gray-400 ">
-          {ticket?.description}
-        </p>
+        <p className="font-normal text-gray-400 ">{ticket?.description}</p>
       </button>
       {showModal ? (
         <>
