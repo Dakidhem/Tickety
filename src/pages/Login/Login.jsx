@@ -12,10 +12,11 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await login(username, password);
-      setToken(response.access); // Assuming the JWT token is named 'access'
+      setToken(response.access);
       toast.success("Vous vous êtes connecté avec succés");
-      navigateTo("/dashboard"); // Redirect to the home page or wherever you want
+      navigateTo("/dashboard");
     } catch (error) {
+      toast.error("Un problème est survenue, Vérifier vos identifiants");
       console.error("Login failed", error);
     }
   };

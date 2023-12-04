@@ -62,7 +62,7 @@ const DashBoard = () => {
           </Link>
         )}
       </div>
-      {loading ? ( // Display a loading message or spinner while loading
+      {loading ? (
         <p>Chargement...</p>
       ) : tickets.length === 0 ? (
         <p>Nous n'avons trouvé aucun tickets</p>

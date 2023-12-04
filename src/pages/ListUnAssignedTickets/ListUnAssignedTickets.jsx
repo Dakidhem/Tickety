@@ -47,7 +47,7 @@ const ListUnAssignedTickets = () => {
       <h2 className="text-2xl font-semibold mb-4">
         Liste des tickets non attribués
       </h2>
-      {loading ? ( // Display a loading message or spinner while loading
+      {loading ? (
         <p>Chargement...</p>
       ) : setUnassignedTickets.length === 0 ? (
         <p>Nous n'avons trouvé aucun tickets</p>
