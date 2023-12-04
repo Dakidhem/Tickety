@@ -43,7 +43,7 @@ const ListUnAssignedTickets = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-8 w-full">
+    <div className="max-w-screen-xl mx-auto mt-8 w-full px-4">
       <h2 className="text-2xl font-semibold mb-4">
         Liste des tickets non attribués
       </h2>
